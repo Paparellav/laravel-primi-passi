@@ -40,3 +40,15 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 })->name('home');
+
+Route::get('/about-us', function () {
+    return view('about-us');
+})->name('about-us');
+
+Route::get('/contact-us', function () {
+    return view('contact-us');
+})->name('contact-us');
+
+Route::get('/join-us', function () {
+    return view('join-us');
+})->name('join-us');
